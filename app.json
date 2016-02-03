@@ -1,0 +1,6 @@
+{
+  "name": "TelegramCLI",
+  "description": "An image to compile tg for Heroku",
+  "image": "heroku/cedar:14",
+  "addons": []
+}

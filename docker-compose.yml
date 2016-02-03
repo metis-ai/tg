@@ -1,0 +1,14 @@
+worker:
+  build: .
+  command: 'bash -c ''dumb.py'''
+  working_dir: /app/user
+shell:
+  build: .
+  command: bash
+  working_dir: /app/user
+  environment:
+    PORT: 8080
+  ports:
+    - '8080:8080'
+  volumes:
+    - '.:/app/user'
